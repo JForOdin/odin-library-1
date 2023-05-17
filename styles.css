@@ -1,0 +1,53 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    color:cadetblue;
+    text-align: center;
+}
+.main-div {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    text-align: center;
+}
+
+.book-list-headers {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom: 2px double darkslategray;
+    margin: 10px;
+    /* border-bottom: 5px; */
+
+}
+.book-div {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    text-align: center;
+
+}
+
+#form-div {
+    margin: 10px;
+}
+#add-button {
+    background-color:#5f9ea0;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* margin: 5px; */
+    padding: 5px;
+    border-radius: 3px;
+}
+#submit-book {
+    background-color:cadetblue;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
