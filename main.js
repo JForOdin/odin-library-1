@@ -14,11 +14,11 @@ const libraryDiv = document.getElementById("book-list");
 const readButton = (id) => {
     if(library.getBooks()[id].read)
     {
-        return "<button style = 'color: #5f9ea0 border-radius: 5px' onClick='library.toggleRead("+`${id}`+")' id = "+`${id}`+">havent read</button>";
+        return "<button style = 'background-color: #5f9ea0; color: white; border-radius: 5px; margin: 5px;' onClick='library.toggleRead("+`${id}`+")' id = "+`${id}`+">havent read</button>";
     }
     else
     {
-        return "<button onClick='library.toggleRead("+`${id}`+")' id = "+`${id}`+">read</button>";
+        return "<button style = 'background-color: #5f9ea0; color: white;  border-radius: 5px; margin: 5px;' onClick='library.toggleRead("+`${id}`+")' id = "+`${id}`+">read</button>";
     }
 }
 const refreshLibrary = () => {
@@ -32,6 +32,8 @@ const refreshLibrary = () => {
         bookDiv.style.display = "grid";
         bookDiv.style.gridTemplateColumns = "25% 25% 25% 25%";
         bookDiv.style.justifyContent = "space-evenly";
+        bookDiv.style.border = "5px solid #5f9ea0";
+        bookDiv.style.margin = "5px";
        /* bookDiv.className = "book-div";
         bookDiv.style.display = "flex";
 
